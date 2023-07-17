@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     private val NEEDED_PERMISSIONS = arrayOf(
         Manifest.permission.READ_EXTERNAL_STORAGE,
         Manifest.permission.READ_PHONE_STATE,
-        Manifest.permission.CAMERA
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

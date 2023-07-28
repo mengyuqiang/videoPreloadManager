@@ -83,7 +83,7 @@ public class PreloadManager {
         //先判断是否有缓存文件，如果已经存在缓存文件，并且其大小大于1KB，则表示已经预加载完成了
         File cacheFile =mHttpProxyCacheServer.getCacheFile(rawUrl);
         if (cacheFile.exists()) {
-            if (cacheFile.length() >= 1024) {
+            if (cacheFile.length() >= 1024*500) {
                 return true;
             } else {
                 //这种情况一般是缓存出错，把缓存删掉，重新缓存
